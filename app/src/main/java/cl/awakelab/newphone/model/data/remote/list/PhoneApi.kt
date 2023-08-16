@@ -1,4 +1,4 @@
-package cl.awakelab.newphone.model.data.remote
+package cl.awakelab.newphone.model.data.remote.list
 
 import retrofit2.Response
 import retrofit2.http.GET

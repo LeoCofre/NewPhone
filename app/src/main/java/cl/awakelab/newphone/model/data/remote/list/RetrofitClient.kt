@@ -1,4 +1,4 @@
-package cl.awakelab.newphone.model.data.remote
+package cl.awakelab.newphone.model.data.remote.list
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
