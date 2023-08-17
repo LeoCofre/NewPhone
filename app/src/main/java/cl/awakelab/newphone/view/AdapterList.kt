@@ -39,7 +39,7 @@ class AdapterList : RecyclerView.Adapter<AdapterList.ViewHolder>() {
 
         fun bind(phone: PhoneEntity) {
             binding.imgItem.load(phone.image)
-            binding.textname.text = phone.name.toString()
+            binding.textname.text = phone.name
             binding.textPrice.text = phone.price.toString()
             binding.cardViewItem.setOnClickListener {
                 val bundle = Bundle()

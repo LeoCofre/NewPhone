@@ -22,7 +22,7 @@ class ListFragment : Fragment() {
     ): View? {
         binding = FragmentListBinding.inflate(layoutInflater)
         initAdapter()
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return binding.root
     }
 
     private fun initAdapter() {

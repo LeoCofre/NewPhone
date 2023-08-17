@@ -7,7 +7,7 @@ import retrofit2.http.Path
 
 interface PhoneApi {
     @GET("products/")
-    fun getDataPhones(): Response<List<Phone>>
+    suspend fun getDataPhones(): Response<List<Phone>>
 
     @GET("details/{id}")
     suspend fun getDataPhoneDetails(@Path("id") id: Long): Response<PhoneDetail>
