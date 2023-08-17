@@ -5,8 +5,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "tabla_phone")
 data class PhoneEntity(
-    @PrimaryKey val id: Long,
-    val image: Long,
-    val name: Long,
-    val price: Long
+    @PrimaryKey val id: Int,
+    val image: String,
+    val name: String,
+    val price: Int
 )

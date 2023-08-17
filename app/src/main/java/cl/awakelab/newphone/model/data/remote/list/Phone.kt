@@ -5,8 +5,4 @@ data class Phone(
     val image: String,
     val name: String,
     val price: Int
-) {
-    fun transformToEntity() {
-        TODO("Not yet implemented")
-    }
-}
+)
