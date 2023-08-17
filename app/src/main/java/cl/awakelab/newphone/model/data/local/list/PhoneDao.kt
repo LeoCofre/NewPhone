@@ -6,16 +6,15 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import cl.awakelab.newphone.model.data.local.detail.PhoneDetailEntity
-import cl.awakelab.newphone.model.data.remote.list.Phone
 
 @Dao
 interface PhoneDao {
 
-    //Insrtamos datos a la lista
+    //Insertamos datos a la lista
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertPhone(phoneEntity: List<PhoneEntity>)
 
-    @Query("Select * from tabla_phone order by id asc")
+    @Query("Select * from table_phone order by id asc")
     fun getPhones():LiveData<List<PhoneEntity>>
 
     //Insertamos datos al detalle

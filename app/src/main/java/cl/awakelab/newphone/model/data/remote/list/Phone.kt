@@ -1,8 +1,8 @@
 package cl.awakelab.newphone.model.data.remote.list
 
 data class Phone(
-    val id: Int,
+    val id: Long,
     val image: String,
     val name: String,
-    val price: Int
+    val price: Long
 )

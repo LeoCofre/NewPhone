@@ -10,7 +10,7 @@ import cl.awakelab.newphone.model.data.remote.list.RetrofitClient
 import kotlinx.coroutines.launch
 
 class PhoneViewModel(application: Application) : AndroidViewModel(application) {
-    private val repository: Repository = TODO()
+    private val repository: Repository
     fun phonesLiveData() = repository.getPhoneEntity()
     fun phoneDetailLiveData(id: Long) = repository.getPhoneDetailEntity(id)
 

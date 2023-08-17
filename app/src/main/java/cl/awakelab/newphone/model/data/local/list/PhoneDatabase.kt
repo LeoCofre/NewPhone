@@ -4,8 +4,9 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import cl.awakelab.newphone.model.data.local.detail.PhoneDetailEntity
 
-@Database(entities = [PhoneEntity::class], version = 1)
+@Database(entities = [PhoneEntity::class, PhoneDetailEntity::class], version = 1)
 abstract class PhoneDatabase: RoomDatabase() {
 
     abstract fun getPhoneDao(): PhoneDao
