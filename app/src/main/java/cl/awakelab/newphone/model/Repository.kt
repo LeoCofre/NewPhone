@@ -37,7 +37,7 @@ class Repository(private val phoneApi: PhoneApi, private val phoneDao: PhoneDao)
             if (response.isSuccessful) {
                 val resp = response.body()
                 resp?.let {
-                    val phoneDetailEntity = it.transformToDetailEntity(id)
+                    val phoneDetailEntity = it.transformToDetailEntity()
                     phoneDao.insertPhoneDetail(phoneDetailEntity)
                 }
             }

@@ -8,7 +8,7 @@ import cl.awakelab.newphone.model.data.remote.list.Phone
 fun Phone.transformToEntity(): PhoneEntity =
     PhoneEntity(this.id, this.image, this.name, this.price)
 
-fun PhoneDetail.transformToDetailEntity(id: Long): PhoneDetailEntity =
+fun PhoneDetail.transformToDetailEntity(): PhoneDetailEntity =
     PhoneDetailEntity(
         this.id,
         this.name,
