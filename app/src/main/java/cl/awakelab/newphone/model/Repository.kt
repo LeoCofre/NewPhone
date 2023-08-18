@@ -5,9 +5,9 @@ import androidx.lifecycle.LiveData
 import cl.awakelab.newphone.model.data.local.detail.PhoneDetailEntity
 import cl.awakelab.newphone.model.data.local.list.PhoneDao
 import cl.awakelab.newphone.model.data.local.list.PhoneEntity
-import cl.awakelab.newphone.model.data.remote.detail.PhoneDetail
-import cl.awakelab.newphone.model.data.remote.list.Phone
 import cl.awakelab.newphone.model.data.remote.list.PhoneApi
+import cl.awakelab.newphone.model.data.remote.transformToDetailEntity
+import cl.awakelab.newphone.model.data.remote.transformToEntity
 
 class Repository(private val phoneApi: PhoneApi, private val phoneDao: PhoneDao) {
 
@@ -45,20 +45,7 @@ class Repository(private val phoneApi: PhoneApi, private val phoneDao: PhoneDao)
             Log.e("RepoDetail", " En el repoDetail")
         }
 
-
     }
 }
 
-fun Phone.transformToEntity(): PhoneEntity =
-    PhoneEntity(this.id, this.image, this.name, this.price)
 
-fun PhoneDetail.transformToDetailEntity(id: Long): PhoneDetailEntity =
-    PhoneDetailEntity(
-        this.id,
-        this.name,
-        this.price,
-        this.image,
-        this.description,
-        this.lastPrice,
-        this.credit
-    )
