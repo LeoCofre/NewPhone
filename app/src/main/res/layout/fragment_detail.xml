@@ -64,6 +64,7 @@
                 android:id="@+id/txtNombreDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:gravity="center"
                 android:text="Nombre"
                 android:textSize="34sp"
@@ -90,6 +91,7 @@
                 android:id="@+id/txtCreditoDetalle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:gravity="center"
                 android:text="Credit"
                 android:textSize="20sp" />
@@ -97,7 +99,7 @@
             <TextView
                 android:id="@+id/txtDescription"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="128dp"
                 android:gravity="center"
                 android:text="Description"
                 android:textSize="20sp" />
