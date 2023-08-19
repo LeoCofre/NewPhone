@@ -6,6 +6,7 @@
     <string name="nombre">Nombre</string>
     <string name="last_price">Last Price</string>
     <string name="price">Price</string>
+    <string name="precio">Price</string>
     <string name="credit">Credit</string>
     <string name="credito">Credit</string>
     <string name="description">Description</string>
