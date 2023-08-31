@@ -6,10 +6,23 @@
     <string name="nombre">Nombre</string>
     <string name="last_price">Last Price</string>
     <string name="price">Price</string>
-    <string name="precio">Price</string>
     <string name="credit">Credit</string>
-    <string name="credito">Credit</string>
     <string name="description">Description</string>
     <string name="imagen_clickable">Imagen clickable</string>
     <string name="imagen_detalle">Imagen Detalle</string>
+    <string name="descripcion_prefix">DESCRIPCIÓN</string>
+    <string name="solo_efectivo">SOLO EFECTIVO</string>
+    <string name="credito">CRÉDITO</string>
+    <string name="precio_actual">AHORA $ %1$s</string>
+    <string name="precio_anterior">ANTES $ %1$s</string>
+    <string name="descripcion_completa">%1$s \n%2$s</string>
+    <string name="ahora">AHORA $ </string>
+    <string name="antes">ANTES $ </string>
+    <string name="descripcion">DESCRIPCIÓN \n</string>
+    <string name="consulta_asunto">Consulta %1$s id %2$d</string>
+    <string name="consulta_message">Hola,\nVi este teléfono %1$s de código %2$d y me gustaría que me contactaran a este correo o al siguiente número ____________.\nQuedo atento.</string>
+    <string name="send_mail_chooser_title">Enviar correo</string>
+    <string name="info_email">info@prueba.cl</string>
+
+
 </resources>
